@@ -1,0 +1,38 @@
+h1 {
+color: #0000ff;
+text-align: center;
+font-family: Comic Sans MS
+}
+h5 {
+color: #FFFDFC
+}
+.myClass {
+color: red
+}
+
+#myID {
+	text-align: center
+}
+
+.myClassal {
+text-align: center;
+color: #ff1472
+}
+.VK_group_block {
+    width: 240px;
+    height: 90px;
+    background: url("images/vk2.png");
+    position: relative;
+    margin-bottom: 10px;
+}
+.VKgbT {
+    position: absolute;
+    top: 37px;
+    left: 93px;
+    width: 140px;
+	color: #FFFDFC;
+    overflow: hidden;
+    
+}
+
+
