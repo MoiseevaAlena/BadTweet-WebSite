@@ -1,53 +1,66 @@
 h1 {
-color: #0000ff;
-text-align: center;
-font-family: Comic Sans MS
+/*color: #0000ff;*/
+/*text-align: center;*/
+margin-top: 50px;
+margin-bottom: 30px;
 }
 h5 {
-color: #FFFDFC
+/*color: #FFFDFC*/
 }
 h3 {
-text-align: center;
+/*text-align: center;*/
 }
-.myClass {
-color: red
-}
-.myClassal {
-text-align: center;
-color:  #0000ff;
-}
-.myCl {
-text-align: center;
-color: #FFFDFC
-}
+
 .VK_group_block {
-    width: 240px;
-    height: 90px;
-    background: url("images/vk2.png");
-    position: relative;
-    margin-bottom: 10px;
+  width: 240px;
+  height: 90px;
+  background: url("images/vk2.png");
+  position: relative;
+  margin-bottom: 10px;
 	margin-top:20px;
 }
 
 .VKgbT {
-    position: absolute;
-    top: 37px;
-    left: 93px;
-    width: 140px;
-	color: #FFFDFC;
-    overflow: hidden;
+	position: absolute;
+	top: 37px;
+  left: 93px;
+  width: 140px;
+  color: #FFFDFC;
+  overflow: hidden;
     
 }
 .downloadapplication{
-margin-bottom: 10px;
+	margin-bottom: 10px;
 	margin-right:40px;
 }
 .center {
-text-align: center;
+	text-align: center;
 }
-	
 
+.float-right {
+	float: right;
+	margin-left: 12px;
+	display: inline-block;
+}
 
+.hd-face {
+	width: 150px;
+	height: 150px;
+}
 
+.row.team div {
+	padding: 0px 10px 60px 20px;
+}
 
+.row.team img {
+	margin-bottom: 20px;
+}
+.row.team .lead {
+	margin-bottom: 10px;
+}
 
+.arrow-offset {
+	position: relative;
+	top: -2px;
+	padding-right: 10px;
+}
