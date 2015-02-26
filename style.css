@@ -6,17 +6,19 @@ font-family: Comic Sans MS
 h5 {
 color: #FFFDFC
 }
+h3 {
+text-align: center;
+}
 .myClass {
 color: red
 }
-
-#myID {
-	text-align: center
-}
-
 .myClassal {
 text-align: center;
-color: #ff1472
+color:  #0000ff;
+}
+.myCl {
+text-align: center;
+color: #FFFDFC
 }
 .VK_group_block {
     width: 240px;
@@ -24,7 +26,9 @@ color: #ff1472
     background: url("images/vk2.png");
     position: relative;
     margin-bottom: 10px;
+	margin-top:20px;
 }
+
 .VKgbT {
     position: absolute;
     top: 37px;
@@ -34,5 +38,16 @@ color: #ff1472
     overflow: hidden;
     
 }
+.downloadapplication{
+margin-bottom: 10px;
+	margin-right:40px;
+}
+.center {
+text-align: center;
+}
+	
+
+
+
 
 
