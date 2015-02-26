@@ -5,7 +5,7 @@ margin-top: 50px;
 margin-bottom: 30px;
 }
 h5 {
-/*color: #FFFDFC*/
+color: #FFFDFC
 }
 h3 {
 /*text-align: center;*/
@@ -14,7 +14,7 @@ h3 {
 .VK_group_block {
   width: 240px;
   height: 90px;
-  background: url("images/vk2.png");
+  background: url("images/download/vk2.png");
   position: relative;
   margin-bottom: 10px;
 	margin-top:20px;
