@@ -1,25 +1,54 @@
+.navbar .logo-text {
+  padding: 6px 30px 6px 0px;
+}
+
+.jumbotron {
+  padding-top: 100px;
+  position: relative;
+  background: -webkit-linear-gradient(#2d57a1 11.59%, #5cd8d0 100%);
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.jumbotron img {
+  box-shadow: 0px -3px 80px rgba(0,0,0,0.3);
+  border-radius: 125px;
+}
+
 .jumbotron img.hidden-xs {
-	width: 50%;
-	height: 50%;
+	width: 37%;
+	height: 37%;
 	max-width: 1024px;
 	max-height: 1024px;
 }
 .jumbotron img.hidden-lg {
-	width: 70%;
-	height: 70%;
+	width: 50%;
+	height: 50%;
+}
+
+.jumbotron .release-date {
+  position: absolute;
+  top: 112px;
+  right: 20%;
+  background: gold;
+  padding: 15px 23px 15px 23px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.1);
 }
 
 h1 {
-/*color: #0000ff;*/
-/*text-align: center;*/
-margin-top: 50px;
-margin-bottom: 30px;
+  /*color: #0000ff;*/
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
 }
 h5 {
-color: #FFFDFC
+  color: #FFFDFC;
 }
 h3 {
-/*text-align: center;*/
+  /*text-align: center;*/
 }
 
 .VK_group_block {
@@ -55,6 +84,8 @@ h3 {
 
 .row.team div {
 	padding: 0px 10px 60px 20px;
+	/* FIXME:  Фиксированная таким образом высота — плохо. */
+	height: 370px;
 }
 
 .row.team img {
