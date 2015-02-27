@@ -1,3 +1,14 @@
+.jumbotron img.hidden-xs {
+	width: 50%;
+	height: 50%;
+	max-width: 1024px;
+	max-height: 1024px;
+}
+.jumbotron img.hidden-lg {
+	width: 70%;
+	height: 70%;
+}
+
 h1 {
 /*color: #0000ff;*/
 /*text-align: center;*/
@@ -35,12 +46,6 @@ h3 {
 }
 .center {
 	text-align: center;
-}
-
-.float-right {
-	float: right;
-	margin-left: 12px;
-	display: inline-block;
 }
 
 .hd-face {
