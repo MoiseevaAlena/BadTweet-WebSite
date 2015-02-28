@@ -1,10 +1,21 @@
 /* COMMON */
 
+@font-face {
+    font-family: 'Gardens';
+    src: url('fonts/GardensC_03_1.otf') format('opentype');
+}
+
+body {
+  font-family: Gardens, Arial, sans-serif;
+  font-size: 16px;
+}
+
 h1 {
   /*color: #0000ff;*/
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
+  font-size: 40px;
 }
 
 h5 {
@@ -120,6 +131,32 @@ h3 {
 /* EOF TEAM */
 
 /* FOOTER */
+
+footer {
+  padding: 40px 0 30px 0;
+  margin-top: 30px;
+  text-align: center;
+  background: -webkit-linear-gradient(#58c3cf 0%, #3aa0cb 100%);
+  color: white;
+}
+
+footer a {
+  color: white;
+  border-bottom: 1px dotted white;
+  margin-bottom: 1px;
+}
+
+footer a:hover {
+  color: #faffb7;
+  border-bottom: 1px dotted #faffb7;
+  text-decoration: none;
+}
+
+footer a:active {
+  color: #f7ff84;
+  border-bottom: none;
+  text-decoration: none;
+}
 
 .arrow-offset {
 	position: relative;
