@@ -70,9 +70,35 @@ h3 {
   background-image: url('images/facebook.png');
 }
 
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .sIcon.sIcon-twitter {
+    background-image: url('images/twitter@2x.png');
+  }
+  
+  .sIcon.sIcon-vk {
+    background-image: url('images/vk@2x.png');
+  }
+  
+  .sIcon.sIcon-facebook {
+    background-image: url('images/facebook@2x.png');
+  }
+}
+
 /* EOF ICON */
 
 /* NAVBAR */
+
+.navbar .lang {
+  position: relative;
+  top: 2px;
+  margin-right: 14px;
+}
 
 .navbar .logo-text {
   margin: 6px 70px;
@@ -81,6 +107,19 @@ h3 {
 .navbar .sIcon {
   position: relative;
   top: 8px;
+  border-radius: 36px;
+}
+
+.navbar .sIcon:hover {
+  opacity: 0.9;
+}
+
+.navbar .app-icon-micro {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  position: relative;
+  top: -2px;
 }
 
 .navbar .brand {
@@ -276,7 +315,7 @@ a.right.carousel-control {
 }
 
 .team .sIcon {
-    -webkit-transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
@@ -288,6 +327,7 @@ a.right.carousel-control {
   -o-transform: translate(0,-6px);
   -ms-transform: translate(0,-6px);
   transform: translate(0,-6px);
+  opacity: 0.9;
 }
 
 /* EOF TEAM */
