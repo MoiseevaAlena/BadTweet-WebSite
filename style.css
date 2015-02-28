@@ -14,6 +14,7 @@
 body {
   font-family: Gardens, Arial, sans-serif;
   font-size: 16px;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -53,10 +54,10 @@ h3 {
   position: relative;
   background: -webkit-linear-gradient(#2d57a1 11.59%, #5cd8d0 100%);
   border-bottom: 1px solid #e0e0e0;
+  color: white;
 }
 
 .jumbotron h1 {
-  color: white;
   font-family: PermanentMarker, Arial, sans-serif;
 }
 
@@ -71,9 +72,19 @@ h3 {
 	max-width: 1024px;
 	max-height: 1024px;
 }
+
 .jumbotron img.hidden-lg {
 	width: 50%;
 	height: 50%;
+}
+
+.jumbotron .iPhone-screen {
+  width: 90%;
+  height: 90%;
+}
+
+.jumbotron h1 {
+  margin: 0;
 }
 
 .jumbotron .release-date {
@@ -88,7 +99,6 @@ h3 {
   padding-top: 34px;
   border: 4px solid #d0c600;
   box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.1);
-  /* TODO: Повернуть */
 }
 
 .jumbotron .release-date span {
@@ -97,7 +107,45 @@ h3 {
   display: block;
 }
 
+.jumbotron .row {
+  position: relative;
+}
+
+.jumbotron .hover-mid {
+  position: absolute;
+  top: 20%;
+  right: 0px;
+}
+
+.jumbotron .small-text {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.jumbotron .download-mac {
+  padding-left: 11px;
+  padding-right: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.download-mac-icon {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
 /* EOF JUMBOTRON */
+
+/* CAROUSEL */
+
+/*
+.carousel .item img {
+  height: 350px;
+}
+*/
+
+/* EOF CAROUSEL */
 
 /* DOWNLOAD */
 
@@ -135,15 +183,35 @@ h3 {
 
 .row.team div {
 	padding: 0px 10px 60px 20px;
-	/* FIXME:  Фиксированная таким образом высота — плохо. */
-	height: 370px;
 }
 
 .row.team img {
 	margin-bottom: 20px;
 }
+
 .row.team .lead {
 	margin-bottom: 10px;
+}
+
+.sIcon {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0px 7px;
+}
+
+.sIcon.sIcon-twitter {
+  background-image: url('images/twitter.png');
+}
+
+.sIcon.sIcon-vk {
+  background-image: url('images/vk.png');
+}
+
+.sIcon.sIcon-facebook {
+  background-image: url('images/facebook.png');
 }
 
 /* EOF TEAM */

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
     <meta name="description" content="Сайт игры BadTweet">
     <meta name="author" content="Моисеева Алёна Александровна">
   
-    <title>ARWAY The Running Winner</title>
+    <title>Arway The Running Winner</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -61,10 +61,36 @@
     
     <!-- JUMBOTRON -->
     <div class="jumbotron text-center">
-      <img src="images/logo@2x.png" alt="Logo" class="hidden-xs hidden-sm">
-      <img src="images/logo@2x.png" alt="Logo" class="hidden-md hidden-lg">
-      <h1>Arway The Running Winner</h1>
-      <p class="release-date animated rubberBand"><span>Релиз</span>Март 2015</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <img src="images/iphone6silver.png" class="iPhone-screen">
+            <!-- <img src="images/logo@2x.png" alt="Logo" class="hidden-xs hidden-sm"> -->
+            <!-- <img src="images/logo@2x.png" alt="Logo" class="hidden-md hidden-lg"> -->
+            <h1>Arway<br>The Running Winner</h1>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 hover-mid">
+<!--             <p class="release-date animated rubberBand"><span>Релиз</span>Март 2015</p> -->
+            <p class="lead">Теперь доступно<br>на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
+            <p class="small-text">Версия для мобильных устройств:</p>
+            <div>
+              <!-- Use https://linkmaker.itunes.apple.com/us/ or app settings page to replace this with the correct link -->
+              <a href="https://itunes.apple.com/us/app/keynote/id361285480?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+            </div>
+            
+            <div>
+              <a href="https://play.google.com/store/search?q=pub:NULL" style="display:inline-block;overflow:hidden;background:url(https://developer.android.com/images/brand/en_app_rgb_wo_45.png) no-repeat;width:129px;height:45px;"></a>
+            </div>
+            
+            <p class="small-text">Версия для настольных систем:</p>
+            
+            <div class="btn btn-primary btn-lg download-mac"><img src="images/finder-icon.png" class="download-mac-icon">Скачать для Mac</div>
+            
+            <!-- <a href="#"><img src="images/download/GooglePlay.png" alt="Available on the Google Play Market"></a> -->
+
+          </div>
+        </div>
+      </div>
     </div>
     <!-- EOF JUMBOTRON -->
 
@@ -86,11 +112,7 @@
       </div>
 -->
       <!-- EOF DOWNLOAD -->
-  
-  
-      <!-- ABOUT -->
-      <h1 id="about">Об игре</h1>
-  
+    
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -121,7 +143,9 @@
           </a>
         </div>
       
-      <h2>Описание</h2>
+      <!-- ABOUT -->
+      <h1 id="about">Об игре</h1>
+
       <p><img src="images/Arway.png" class="pull-right">
         Знакомьтесь, главный герой игры Arway.</p>
       <p>Как любой современный человек, Arway тратит много времени на общение в социальных сетях.</p>
@@ -171,11 +195,12 @@
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
             <img class="img-circle hd-face" src="images/we/Anthony.jpg">
             <p class="lead">Антон Бутинов</p>
-            <p>Координатор проекта, аналитик,<br>iOS-разработчик</p>
-            <p class="text-muted">
-            <a href="https://twitter.com/AnthonyBoutinov" target="_blank">@AnthonyBoutinov</a>
-            <br>vk.com/<a href="https://vk.com/boutinov" target="_blank">boutinov</a>
-            <br>facebook.com/<a href="https://www.facebook.com/anthonyboutinov" target="_blank">anthonyboutinov</a>
+            <p>Координатор, аналитик, iOS-разработчик</p>
+            <p>
+              <a
+                href="https://twitter.com/AnthonyBoutinov" target="_blank" class="sIcon sIcon-twitter"></a><a
+                href="https://vk.com/boutinov" target="_blank" class="sIcon sIcon-vk"></a><a
+                href="https://www.facebook.com/anthonyboutinov" target="_blank" class="sIcon sIcon-facebook"></a>
             </p>
           </div>
       
@@ -183,42 +208,61 @@
             <img class="img-circle hd-face" src="images/we/Mihail.jpg">
             <p class="lead">Михаил Полюбай</p>
             <p>Android-разработчик</p>
-            <p class="text-muted">vk: <a href="https://vk.com/optimisist" target="_blank">Миша Полюбай</a></p>
+            <p>
+              <a
+                href="https://twitter.com/AnthonyBoutinov" target="_blank" class="sIcon sIcon-twitter"></a><a
+                href="https://vk.com/optimisist" target="_blank" class="sIcon sIcon-vk"></a>
+            </p>
           </div>
       
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
             <img class="img-circle hd-face" src="images/we/Aleksandra.jpg">
             <p class="lead">Александра Кузьмина</p>
             <p>Twitter-component-разработчик</p>
-            <p class="text-muted">vk: <a href="https://vk.com/id34150401" target="_blank">Александра Кузьмина</a></p>
+            <p>
+              <a
+                href="https://vk.com/id34150401" target="_blank" class="sIcon sIcon-vk"></a>
+            </p>
           </div>
       
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
             <img class="img-circle hd-face" src="images/we/Alena.jpg">
             <p class="lead">Алёна Моисеева</p>
             <p>Web-разработчик, web-дизайнер</p>
-            <p class="text-muted">vk: <a href="https://vk.com/moiseeva_alena" target="_blank">Алёна Моисеева</a></p>
+            <p>
+              <a
+                href="https://vk.com/moiseeva_alena" target="_blank" class="sIcon sIcon-vk"></a>
+            </p>
           </div>
       
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
             <img class="img-circle hd-face" src="images/we/Alevtina.jpg">
             <p class="lead">Алевтина Петрова</p>
             <p>Дизайнер</p>
-            <p class="text-muted">vk: <a href="https://vk.com/alevtina_petrova" target="_blank">Алевтина Петрова</a></p>
+            <p>
+              <a
+                href="https://vk.com/alevtina_petrova" target="_blank" class="sIcon sIcon-vk"></a>
+            </p>
           </div>
       
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
             <img class="img-circle hd-face" src="images/we/Alina.jpg">
             <p class="lead">Алина Ганиева</p>
             <p>Дизайнер игрового мира</p>
-            <p class="text-muted">vk: <a href="https://vk.com/alinochka1104" target="_blank">Алинка Ганиева</a></p>
+            <p>
+              <a
+                href="https://vk.com/alinochka1104" target="_blank" class="sIcon sIcon-vk"></a>
+            </p>
           </div>
         
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center col-lg-offset-4 col-md-offset-4 col-sm-offset-3">
             <img class="img-circle hd-face" src="images/we/Vladimir.jpg">
             <p class="lead">Владимир Бурдин</p>
             <p>Тестировщик</p>
-            <p class="text-muted">vk: <a href="https://vk.com/vova_burdin" target="_blank">Владимир Бурдин</a></p>
+            <p>
+              <a
+                href="https://vk.com/vova_burdin" target="_blank" class="sIcon sIcon-vk"></a>
+            </p>
           </div>      
   
         </div>    
