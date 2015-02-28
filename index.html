@@ -34,14 +34,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <img src="images/logo-text-proto.png" alt="Arway The Running Winner" class="logo-text">
+<!--           <img src="images/logo-text-proto.png" alt="Arway The Running Winner" class="logo-text"> -->
+          <div class="brand">ARWAY The Running Winner</div>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#about">Об игре</a></li>
-            <li><a href="http://vk.com/arwaytherunningwinner" target="_blank">ВКонтакте</a></li>
-            <li><a href="http://facebook.com/arwaytherunningwinner" target="_blank">Facebook</a></li>
-            <li><a href="#team">О нас</a></li>
+          <ul class="nav navbar-nav navbar-right">
+<!--             <li><a href="#about">Об игре</a></li> -->
+            <li><a href="https://vk.com/arwaytherunningwinner" target="_blank" class="sIcon sIcon-vk">ВКонтакте</a></li>
+            <li><a href="http://facebook.com/arwaytherunningwinner" target="_blank" class="sIcon sIcon-facebook">Facebook</a></li>
+<!--             <li><a href="#team">О нас</a></li> -->
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
@@ -52,11 +53,18 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 logo-and-title">
-            <img src="images/iphone6silver.png" class="iPhone-screen">
+            <div class="hidden-xs hidden-sm">
+              <img src="images/iphone6silver.png" class="iPhone-screen">
+            </div>
+            <div class="visible-xs-inline visible-sm-inline">
+              <img src="images/logo@2x.png" class="app-icon-maxi">
+            </div>
+<!--             <h1 class="hidden-xs hidden-sm">ARWAY<br><span>The Running Winner</span></h1> -->
             <h1>ARWAY<br><span>The Running Winner</span></h1>
           </div>
           <div class="col-lg-4 col-md-4 hidden-sm hidden-xs hover-mid">
 <!--             <p class="release-date animated rubberBand"><span>Релиз</span>Март 2015</p> -->
+            <img src="images/logo@2x.png" class="app-icon-mini">
             <p class="lead">Игра доступна<br>на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
             <p class="small-text">Версия для мобильных устройств:</p>
             <div>
@@ -75,6 +83,7 @@
           </div>
           
           <div class="hidden-lg hidden-md col-sm-12 col-xs-12 links-are-below">
+<!--           <h1 class="visible-xs-inline visible-sm-inline">ARWAY<br><span>The Running Winner</span></h1> -->
 <!--             <p class="release-date animated rubberBand"><span>Релиз</span>Март 2015</p> -->
             <p class="lead">Игра доступна на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
             <div>
@@ -142,7 +151,8 @@
         </div>
       
       <!-- ABOUT -->
-      <h1 id="about">Об игре</h1>
+      <a class="anchor" id="about"></a>
+      <h1>Об игре</h1>
 
       <p><img src="images/Arway.png" class="pull-right">
         Знакомьтесь, главный герой игры Arway.</p>
@@ -185,7 +195,8 @@
 -->
 
     <!-- TEAM --> 
-      <h1 id="team">О нас</h1>
+      <a class="anchor" id="team"></a>
+      <h1>О нас</h1>
   
       <div class="container-fluid">
         <div class="row team">
@@ -193,7 +204,7 @@
           <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
             <img class="img-circle hd-face" src="images/we/Anthony.jpg">
             <p class="lead">Антон Бутинов</p>
-            <p>Координатор проекта, аналитик, iOS&#8209;разработчик</p>
+            <p>Координатор, iOS&#8209;разработчик</p>
             <p>
               <a
                 href="https://twitter.com/AnthonyBoutinov" target="_blank" class="sIcon sIcon-twitter">Twitter</a><a
@@ -267,8 +278,13 @@
       </div>
       <!-- EOF TEAM --> 
   
-      <h2>Благодарности</h2>
-      <p>...</p>
+      <h1>Благодарности</h1>
+      <p>Благодарим за помощь (это все написать не списком, а в стиле Благодарностйе в книгах)</p>
+      <ul>
+        <li>Камиля Хадиева — наставник</li>
+        <li>Регину Камалееву — прототипы персонажей</li>
+        <li>Kenney — элементы дизайна</li>
+      </ul>
       
       
       

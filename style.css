@@ -36,13 +36,68 @@ h3 {
 	text-align: center;
 }
 
+.anchor {
+  display: block;
+  position: relative;
+  top: -30px;
+  visibility: hidden;	
+}
+
 /* EOF COMMON */
+
+/* ICON */
+
+.sIcon {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0px 7px;
+  text-indent: -9000em;
+  position: relative;
+}
+
+.sIcon.sIcon-twitter {
+  background-image: url('images/twitter.png');
+}
+
+.sIcon.sIcon-vk {
+  background-image: url('images/vk.png');
+}
+
+.sIcon.sIcon-facebook {
+  background-image: url('images/facebook.png');
+}
+
+/* EOF ICON */
 
 /* NAVBAR */
 
 .navbar .logo-text {
-  padding: 6px 30px 6px 0px;
+  margin: 6px 70px;
 }
+
+.navbar .sIcon {
+  position: relative;
+  top: 8px;
+}
+
+.navbar .brand {
+  font-family: PermanentMarker, Arial, sans-serif;
+  font-size: 30px;
+  margin: 4px 0px;
+  color: #7a7a7a;
+}
+
+/*
+@media (min-width: 768px) {
+  .navbar .container {
+    padding-left: 17%;
+    padding-right: 17%;
+  }
+}
+*/
 
 /* EOF NAVBAR */
 
@@ -119,14 +174,8 @@ h3 {
 }
 
 .jumbotron .hover-mid {
-  padding-top: 10%;
-  padding-bottom: 10%;
-/*
-  position: absolute;
-  top: 15%;
-  right: 0px;
-*/
-
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .jumbotron .links-are-below {
@@ -144,22 +193,35 @@ h3 {
   padding-top: 2px;
   padding-bottom: 2px;
 }
-.download-mac-icon {
+.jumbotron .download-mac-icon {
   width: 40px;
   height: 40px;
   overflow: hidden;
   margin-right: 10px;
 }
 
+.jumbotron .app-icon-mini {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 15px;
+}
+
+.jumbotron .app-icon-maxi {
+  width: 75%;
+  height: 75%;
+}
+
+
 /* EOF JUMBOTRON */
 
 /* CAROUSEL */
 
-/*
-.carousel .item img {
-  height: 350px;
+a.left.carousel-control,
+a.right.carousel-control {
+  background: none;
+  margin-top: 8%;
+  height: 70%;
 }
-*/
 
 /* EOF CAROUSEL */
 
@@ -197,54 +259,36 @@ h3 {
 	height: 150px;
 }
 
-.row.team div {
+.team div {
 	padding: 0px 10px 60px 20px;
 }
 
-.row.team img {
+.team div:last-child {
+  padding-bottom: 0px;
+}
+
+.team img {
 	margin-bottom: 20px;
 }
 
-.row.team .lead {
+.team .lead {
 	margin-bottom: 10px;
 }
 
-.sIcon {
-  width: 36px;
-  height: 36px;
-  display: inline-block;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  margin: 0px 7px;
-  text-indent: -9000em;
-  position: relative;
-  -webkit-transition: 0.2s ease-in-out;
+.team .sIcon {
+    -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
 
-.sIcon:hover, .sIcon:active {  
+.team .sIcon:hover, .team .sIcon:active {  
   -webkit-transform: translate(0,-6px);
   -moz-transform: translate(0,-6px);
   -o-transform: translate(0,-6px);
   -ms-transform: translate(0,-6px);
   transform: translate(0,-6px);
 }
-
-.sIcon.sIcon-twitter {
-  background-image: url('images/twitter.png');
-}
-
-.sIcon.sIcon-vk {
-  background-image: url('images/vk.png');
-}
-
-.sIcon.sIcon-facebook {
-  background-image: url('images/facebook.png');
-}
-
-
 
 /* EOF TEAM */
 
