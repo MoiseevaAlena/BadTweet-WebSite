@@ -47,6 +47,20 @@ h3 {
   visibility: hidden;	
 }
 
+.btn {
+  border: none;
+}
+
+.btn-primary {
+  background-image: none;
+  filter: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
+.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #4986bb;
+}
+
 /* EOF COMMON */
 
 /* ICON */
@@ -98,10 +112,17 @@ only screen and (                min-resolution: 2dppx) {
 
 /* NAVBAR */
 
-.navbar .lang {
+.navbar li.lang {
+  margin-right: 14px;
+}
+
+.navbar li.share {
+  margin-right: 18px;
+}
+
+.navbar li .textual {
   position: relative;
   top: 2px;
-  margin-right: 14px;
 }
 
 .navbar .logo-text {
