@@ -5,7 +5,6 @@
     src: url('fonts/GardensC_03_1.otf') format('opentype');
 }
 
-/* Шрифт этот не понравился все таки, надо другой найти */
 @font-face {
     font-family: 'PermanentMarker';
     src: url('fonts/PermanentMarker.ttf') format('truetype');
@@ -397,12 +396,12 @@ footer.main-footer {
 
 footer.main-footer a {
   color: white;
-  border-bottom: 1px dotted white;
+/*   border-bottom: 1px dotted white; */
   margin-bottom: 1px;
 }
 
 footer.main-footer a:hover {
-  color: #faffb7;
+/*   color: #faffb7; */
   border-bottom: 1px dotted #faffb7;
   text-decoration: none;
 }
@@ -413,8 +412,12 @@ footer.main-footer a:active {
   text-decoration: none;
 }
 
-footer.main-footer .trademarks {
+footer.main-footer .trademarks, footer.main-footer .legal {
   font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+footer.main-footer .trademarks {
   margin: 25px 0;
   text-align: left;
 }
@@ -424,5 +427,6 @@ footer.main-footer .trademarks {
 	top: -2px;
 	padding-right: 10px;
 }
+
 
 /* EOF FOOTER */

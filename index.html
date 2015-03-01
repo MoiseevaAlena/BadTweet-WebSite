@@ -215,7 +215,7 @@
       </blockquote>
 <!--       <p>There was a massive study done in China in 2013 where they classified the emotions of more than 70 million tweets. What they found is that anger spreads faster online than joy or sadness or disgust.</p> -->
 <!--       <p>Hear the full story of ... now if you haven't yet!</p> -->
-      <div class="text-center"><a class="btn btn-primary" href="http://www.npr.org/programs/invisibilia/385792677/our-computers-ourselves" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Listen to the podcast</a></div>
+      <div class="text-center"><a class="btn btn-primary" href="http://www.npr.org/programs/invisibilia/385792677/our-computers-ourselves" target="_blank"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Слушать подкаст</a></div>
     </div>
     
     <div class="article last">
@@ -238,7 +238,7 @@
       <div class="container-fluid">
         <div class="row team">
     
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 text-center">
             <img class="img-circle hd-face" src="images/we/Anthony.jpg">
             <p class="lead">Антон Бутинов</p>
             <p>Координатор, iOS&#8209;разработчик</p>
@@ -250,7 +250,7 @@
             </p>
           </div>
       
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 text-center">
             <img class="img-circle hd-face" src="images/we/Mihail.jpg">
             <p class="lead">Михаил Полюбай</p>
             <p>Android-разработчик</p>
@@ -261,7 +261,7 @@
             </p>
           </div>
       
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 text-center">
             <img class="img-circle hd-face" src="images/we/Aleksandra.jpg">
             <p class="lead">Александра Кузьмина</p>
             <p>Twitter-component-разработчик</p>
@@ -271,7 +271,7 @@
             </p>
           </div>
       
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 text-center">
             <img class="img-circle hd-face" src="images/we/Alena.jpg">
             <p class="lead">Алёна Моисеева</p>
             <p>Web-разработчик, web&#8209;дизайнер</p>
@@ -281,7 +281,7 @@
             </p>
           </div>
       
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 text-center">
             <img class="img-circle hd-face" src="images/we/Alevtina.jpg">
             <p class="lead">Алевтина Петрова</p>
             <p>Дизайнер</p>
@@ -291,7 +291,7 @@
             </p>
           </div>
       
-          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 text-center">
+          <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 text-center">
             <img class="img-circle hd-face" src="images/we/Alina.jpg">
             <p class="lead">Алина Ганиева</p>
             <p>Дизайнер игрового мира</p>
@@ -325,7 +325,7 @@
       
       
       
-      <p class="pull-right hidden-xs"><a href="#"><span class="arrow-offset">↑</span>Вверх</a></p>
+      <a class="pull-right hidden-xs" href="#" id="scroll-up"><span class="arrow-offset">↑</span>Вверх</a>
     
     </div><!-- /.container -->
   
@@ -343,7 +343,13 @@
           <p>NPR®, NPR program names, member station names, logos and program names, and Content Provider names, logos and program names, are service marks of National Public Radio, Inc., its member stations or the Content Providers. All rights are reserved by the respective owners.</p>
         </div>
         
-        <p>&copy; 2015 <a href="mailto:huckleberry@list.ru" title="Написать письмо">Моисеева Алёна</a></p>
+        <p class="legal">
+          &copy; 2015 Arway The Running Winner.
+          All rights reserved.
+          <a href="termsandconditions.html">Terms and conditions</a>.
+          <a href="eula.html">EULA</a>.
+          <a href="mailto:support@arwaytherunningwinner.com">Contact us</a>.
+        </p>
       </div>
     </footer>
     <!-- EOF FOOTER -->
@@ -355,5 +361,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    
+    <script>
+      $("a[id='scroll-up']").click(function() {
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+    </script>
   </body>
 </html>
