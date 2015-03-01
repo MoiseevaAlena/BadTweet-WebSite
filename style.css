@@ -19,9 +19,13 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 50px;
   font-size: 40px;
+}
+
+h2 {
+  margin-top: 40px;
 }
 
 h5 {
@@ -293,8 +297,28 @@ a.right.carousel-control {
 
 /* ARTICLES */
 
+.article {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 40px;
+}
+
+.article.last {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
 .article img.pull-left {
   margin: 0 30px 0 0;
+}
+
+.article > footer:before {
+  content:'\2014 \00A0';
+}
+.article > footer {
+  display: block;
+  font-size: 80%;
+  line-height: 1.42857143;
+  color: #777;
 }
 
 /* EOF ARTICLES */
