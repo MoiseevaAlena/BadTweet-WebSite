@@ -73,12 +73,26 @@ h3 {
 .container > footer:before {
   content:'\2014 \00A0';
 }
-.container > footer {
+.container > footer, .container > .sans-serif > footer {
   display: block;
 /*   font-size: 80%; */
   line-height: 1.42857143;
   color: #777;
   margin:0 0 10px;
+}
+
+.container .breadcrumb {
+  margin-top: 80px;
+}
+
+.sans-serif {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.sans-serif h3 {
+  font-weight: 400;
 }
 
 /* EOF COMMON */
@@ -191,12 +205,6 @@ only screen and (                min-resolution: 2dppx) {
   border-bottom: 1px solid #e0e0e0;
   color: white;
   min-height: 100%;
-}
-
-@media (min-width:1200px) {
-    .jumbotron .container {
-        width: 1100px
-    }
 }
 
 .jumbotron .logo-and-title {
@@ -442,3 +450,25 @@ footer.main-footer .trademarks {
 
 
 /* EOF FOOTER */
+
+/* MEDIA MODIFIERS */
+
+@media (min-width:1200px) {
+  .jumbotron .container {
+      width: 1100px;
+  }
+}
+
+@media (min-width:992px) {
+  .sans-serif {
+   padding: 0 100px;
+ }
+}
+
+@media (max-width:992px) {
+  .sans-serif {
+    padding: 0 20px;
+  }
+}
+
+/* EOF MEDIA MODIFIERS */
