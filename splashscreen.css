@@ -1,0 +1,338 @@
+/* COMMON */
+
+@font-face {
+    font-family: 'Gardens';
+    src: url('fonts/GardensC_03_1.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('fonts/PermanentMarker.ttf') format('truetype');
+}
+
+body {
+  font-family: Gardens, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  background: -webkit-linear-gradient(#2d57a1 11.59%, #5cd8d0 100%) fixed;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+h5 {
+  color: #FFFDFC;
+}
+
+h3 {
+  /*text-align: center;*/
+}
+
+.center {
+	text-align: center;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -30px;
+  visibility: hidden;	
+}
+
+.btn {
+  border: none;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-image: none;
+  filter: none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
+.btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #4986bb;
+}
+
+.glyphicon {
+  position: relative;
+  top: 2px;
+}
+
+.white-link, .white-link:hover, .white-link:active, .white-link:focus {
+  color: white;
+}
+
+/* EOF COMMON */
+
+/* ICON */
+
+.sIcon {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin: 0px 7px;
+  text-indent: -9000em;
+  position: relative;
+}
+
+.sIcon.sIcon-twitter {
+  background-image: url('images/twitter.png');
+}
+
+.sIcon.sIcon-vk {
+  background-image: url('images/vk.png');
+}
+
+.sIcon.sIcon-facebook {
+  background-image: url('images/facebook.png');
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  .sIcon.sIcon-twitter {
+    background-image: url('images/twitter@2x.png');
+  }
+  
+  .sIcon.sIcon-vk {
+    background-image: url('images/vk@2x.png');
+  }
+  
+  .sIcon.sIcon-facebook {
+    background-image: url('images/facebook@2x.png');
+  }
+}
+
+/* EOF ICON */
+
+/* NAVBAR */
+
+.navbar li.lang {
+  margin-right: 14px;
+}
+
+.navbar li.share {
+  margin-right: 18px;
+}
+
+.navbar li .textual {
+  position: relative;
+  top: 2px;
+}
+
+.navbar li .textual-with-glyphicon {
+  position: relative;
+  top: 1px;
+}
+
+.navbar .logo-text {
+  margin: 6px 70px;
+}
+
+.navbar .sIcon {
+  position: relative;
+  top: 8px;
+  border-radius: 36px;
+}
+
+.navbar .sIcon:hover {
+  opacity: 0.9;
+  filter: ~"alpha(opacity=@{90})";
+}
+
+.navbar .app-icon-micro {
+  width: 32px;
+  height: 32px;
+  margin: 0 10px;
+  position: relative;
+  top: -2px;
+}
+
+.navbar .brand {
+  font-family: PermanentMarker, Arial, sans-serif;
+  font-size: 30px;
+  margin: 4px 0px;
+  color: #7a7a7a;
+}
+
+/* EOF NAVBAR */
+
+/* JUMBOTRON */
+
+.jumbotron {
+  padding-top: 100px;
+  position: relative;
+  color: white;
+/*   min-height: 100%; */
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.jumbotron .logo-and-title {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.jumbotron h1 {
+  font-family: PermanentMarker, Arial, sans-serif;
+  font-size: 67px;
+}
+
+.jumbotron h1 span {
+  font-size: 52px;
+}
+
+.jumbotron img.hidden-xs {
+	width: 37%;
+	height: 37%;
+	max-width: 1024px;
+	max-height: 1024px;
+}
+
+.jumbotron img.hidden-lg {
+	width: 50%;
+	height: 50%;
+}
+
+.jumbotron .iPhone-screen {
+  width: 90%;
+  height: 90%;
+}
+
+.jumbotron h1 {
+  margin: 0;
+}
+
+
+.jumbotron .links-are-below {
+  margin-bottom: 50px;
+}
+
+.jumbotron .small-text {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.jumbotron .download-mac {
+  padding-left: 11px;
+  padding-right: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.jumbotron .download-mac-icon {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.jumbotron .app-icon-mini {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 15px;
+}
+
+.jumbotron .app-icon-maxi {
+  width: 45%;
+  height: 45%;
+  margin-bottom: 30px;
+}
+
+.jumbotron .well-lg {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),0 1px 0 rgba(255,255,255,0.1);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),0 1px 0 rgba(255,255,255,0.1);
+}
+
+
+/* EOF JUMBOTRON */
+
+/* FOOTER */
+
+footer.main-footer {
+margin: 20px 0 10px 0;
+  margin-top: 30px;
+  text-align: center;
+/*   background: -webkit-linear-gradient(#58c3cf 0%, #3aa0cb 100%); */
+  color: white;
+}
+
+footer.main-footer a {
+  color: white;
+/*   border-bottom: 1px dotted white; */
+  margin-bottom: 1px;
+}
+
+footer.main-footer a:hover {
+/*   color: #faffb7; */
+  border-bottom: 1px dotted #faffb7;
+  text-decoration: none;
+}
+
+footer.main-footer a:active {
+  color: #f7ff84;
+  border-bottom: none;
+  text-decoration: none;
+}
+
+footer.main-footer .trademarks, footer.main-footer .legal {
+  font-size: 12px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+footer.main-footer .trademarks {
+  margin: 25px 0;
+  text-align: left;
+}
+
+#scroll-up .glyphicon {
+	padding-right: 10px;
+}
+
+
+/* EOF FOOTER */
+
+/* MEDIA MODIFIERS */
+
+@media (min-width:1200px) {
+  .jumbotron .container {
+      width: 1100px;
+  }
+}
+
+@media (min-width:992px) {
+  .sans-serif {
+   padding: 0 100px;
+ }
+ .jumbotron .links-are-below {
+    margin-top: 120px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width:992px) {
+  .sans-serif {
+    padding: 0 20px;
+  }
+}
+
+/* EOF MEDIA MODIFIERS */
