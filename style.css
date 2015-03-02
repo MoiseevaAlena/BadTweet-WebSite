@@ -48,6 +48,7 @@ h3 {
 
 .btn {
   border: none;
+  font-size: 16px;
 }
 
 .btn-primary {
@@ -58,6 +59,26 @@ h3 {
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus,
 .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
   background-color: #4986bb;
+}
+
+.glyphicon {
+  position: relative;
+  top: 2px;
+}
+
+.white-link, .white-link:hover, .white-link:active, .white-link:focus {
+  color: white;
+}
+
+.container > footer:before {
+  content:'\2014 \00A0';
+}
+.container > footer {
+  display: block;
+/*   font-size: 80%; */
+  line-height: 1.42857143;
+  color: #777;
+  margin:0 0 10px;
 }
 
 /* EOF COMMON */
@@ -124,6 +145,11 @@ only screen and (                min-resolution: 2dppx) {
   top: 2px;
 }
 
+.navbar li .textual-with-glyphicon {
+  position: relative;
+  top: 1px;
+}
+
 .navbar .logo-text {
   margin: 6px 70px;
 }
@@ -136,6 +162,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .navbar .sIcon:hover {
   opacity: 0.9;
+  filter: ~"alpha(opacity=@{90})";
 }
 
 .navbar .app-icon-micro {
@@ -152,15 +179,6 @@ only screen and (                min-resolution: 2dppx) {
   margin: 4px 0px;
   color: #7a7a7a;
 }
-
-/*
-@media (min-width: 768px) {
-  .navbar .container {
-    padding-left: 17%;
-    padding-right: 17%;
-  }
-}
-*/
 
 /* EOF NAVBAR */
 
@@ -274,6 +292,11 @@ only screen and (                min-resolution: 2dppx) {
   height: 75%;
 }
 
+.jumbotron .well-lg {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),0 1px 0 rgba(255,255,255,0.1);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.05),0 1px 0 rgba(255,255,255,0.1);
+}
+
 
 /* EOF JUMBOTRON */
 
@@ -331,16 +354,6 @@ a.right.carousel-control {
   margin: 0 30px 0 0;
 }
 
-.article > footer:before {
-  content:'\2014 \00A0';
-}
-.article > footer {
-  display: block;
-  font-size: 80%;
-  line-height: 1.42857143;
-  color: #777;
-}
-
 /* EOF ARTICLES */
 
 /* TEAM */
@@ -380,6 +393,7 @@ a.right.carousel-control {
   -ms-transform: translate(0,-6px);
   transform: translate(0,-6px);
   opacity: 0.9;
+  filter: ~"alpha(opacity=@{90})";
 }
 
 /* EOF TEAM */
@@ -422,9 +436,7 @@ footer.main-footer .trademarks {
   text-align: left;
 }
 
-.arrow-offset {
-	position: relative;
-	top: -2px;
+#scroll-up .glyphicon {
 	padding-right: 10px;
 }
 
