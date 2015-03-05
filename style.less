@@ -65,8 +65,7 @@ h2 {
 }
 
 .white-link {
-  color: white;
-  &:hover, &:active, &:focus {color: white;}
+  &, &:hover, &:active, &:focus {color: white;}
 }
 
 .container {
@@ -103,7 +102,7 @@ h2 {
 
 /* ICON */
 
-sIcon {
+.sIcon {
   
   width: 36px;
   height: 35px;
@@ -125,6 +124,10 @@ sIcon {
   }
 }
 
+.sIconBackgroundSize() {
+  background-size: 36px 35px;
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -133,20 +136,19 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) { 
   
-  sIcon {
+  .sIcon {
+    .sIconBackgroundSize();
+    
     &-twitter {
       background-image: url('images/twitter@2x.png');
-      background-size: 36px 35px;
     }
     
     &-vk {
       background-image: url('images/vk@2x.png');
-      background-size: 36px 35px;
     }
     
     &-facebook {
       background-image: url('images/facebook@2x.png');
-      background-size: 36px 35px;
     }
   }
   
@@ -222,7 +224,6 @@ only screen and (                min-resolution: 2dppx) {
   position: relative;
   border-bottom: 1px solid #e0e0e0;
   color: white;
-  min-height: 100%;
   
   /* http://www.colorzilla.com/gradient-editor/#2d57a1+11,5cd8d0+100;ArwayTheRunningWinner */
   background: #2d57a1;
@@ -236,7 +237,7 @@ only screen and (                min-resolution: 2dppx) {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d57a1', endColorstr='#5cd8d0',GradientType=0 );
   
   h1 {
-    .gardens();
+    .brandfont();
     font-size: 67px;
     span {
       font-size: 52px;
@@ -346,14 +347,14 @@ a.right.carousel-control {
 
 /* TEAM */
 
-team {
+.team {
   
   .hd-face {
   	width: 150px;
   	height: 150px;
   }
   
-  div {
+  & > div {
   	padding: 0px 10px 60px 20px;
   	
   	&:last-child {
@@ -465,7 +466,7 @@ footer.main-footer {
   .jumbotron {
     height: 100%;
   
-    & > .co antainer {
+    & > .container {
       display: inline-block;
       vertical-align: middle;
     }

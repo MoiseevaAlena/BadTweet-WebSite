@@ -52,9 +52,7 @@ h2 {
   position: relative;
   top: 2px;
 }
-.white-link {
-  color: white;
-}
+.white-link,
 .white-link:hover,
 .white-link:active,
 .white-link:focus {
@@ -86,7 +84,7 @@ h2 {
 }
 /* EOF COMMON */
 /* ICON */
-sIcon {
+.sIcon {
   width: 36px;
   height: 35px;
   display: inline-block;
@@ -96,27 +94,27 @@ sIcon {
   text-indent: -9000em;
   position: relative;
 }
-sIcon-twitter {
+.sIcon-twitter {
   background-image: url('images/twitter.png');
 }
-sIcon-vk {
+.sIcon-vk {
   background-image: url('images/vk.png');
 }
-sIcon-facebook {
+.sIcon-facebook {
   background-image: url('images/facebook.png');
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  sIcon-twitter {
+  .sIcon {
+    background-size: 36px 35px;
+  }
+  .sIcon-twitter {
     background-image: url('images/twitter@2x.png');
-    background-size: 36px 35px;
   }
-  sIcon-vk {
+  .sIcon-vk {
     background-image: url('images/vk@2x.png');
-    background-size: 36px 35px;
   }
-  sIcon-facebook {
+  .sIcon-facebook {
     background-image: url('images/facebook@2x.png');
-    background-size: 36px 35px;
   }
 }
 /* EOF ICON */
@@ -167,7 +165,6 @@ sIcon-facebook {
   position: relative;
   border-bottom: 1px solid #e0e0e0;
   color: white;
-  min-height: 100%;
   /* http://www.colorzilla.com/gradient-editor/#2d57a1+11,5cd8d0+100;ArwayTheRunningWinner */
   background: #2d57a1;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxMSUiIHN0b3AtY29sb3I9IiMyZDU3YTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNWNkOGQwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
@@ -180,7 +177,7 @@ sIcon-facebook {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2d57a1', endColorstr='#5cd8d0', GradientType=0);
 }
 .jumbotron h1 {
-  font-family: Gardens, Arial, sans-serif;
+  font-family: PermanentMarker, Arial, sans-serif;
   font-size: 67px;
 }
 .jumbotron h1 span {
@@ -261,30 +258,30 @@ a.right.carousel-control {
 }
 /* EOF ARTICLES */
 /* TEAM */
-team .hd-face {
+.team .hd-face {
   width: 150px;
   height: 150px;
 }
-team div {
+.team > div {
   padding: 0px 10px 60px 20px;
 }
-team div:last-child {
+.team > div:last-child {
   padding-bottom: 0px;
 }
-team img {
+.team img {
   margin-bottom: 20px;
 }
-team .lead {
+.team .lead {
   margin-bottom: 10px;
 }
-team .sIcon {
+.team .sIcon {
   -webkit-transition: 0.2s ease-in-out;
   -moz-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
 }
-team .sIcon:hover,
-team .sIcon:active {
+.team .sIcon:hover,
+.team .sIcon:active {
   -webkit-transform: translate(0, -6px);
   -moz-transform: translate(0, -6px);
   -o-transform: translate(0, -6px);
@@ -352,7 +349,7 @@ footer.main-footer .trademarks {
   .jumbotron {
     height: 100%;
   }
-  .jumbotron > .co antainer {
+  .jumbotron > .container {
     display: inline-block;
     vertical-align: middle;
   }
