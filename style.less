@@ -75,9 +75,16 @@ h2 {
     line-height: 1.42857143;
     color: #777;
     margin:0 0 10px;
-    
-    &:before {
+  }
+  
+  &>footer:before {
       content:'\2014 \00A0';
+  }
+  
+  &>.sans-serif>footer {
+    text-align: right;
+    &:before {
+      content: none;
     }
   }
   
@@ -97,6 +104,8 @@ h2 {
     font-size: 21px;
   }
 }
+
+
 
 /* EOF COMMON */
 

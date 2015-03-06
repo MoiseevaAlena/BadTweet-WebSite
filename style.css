@@ -65,9 +65,14 @@ h2 {
   color: #777;
   margin: 0 0 10px;
 }
-.container > footer:before,
-.container > .sans-serif > footer:before {
+.container > footer:before {
   content: '\2014 \00A0';
+}
+.container > .sans-serif > footer {
+  text-align: right;
+}
+.container > .sans-serif > footer:before {
+  content: none;
 }
 .container .breadcrumb {
   margin-top: 80px;
