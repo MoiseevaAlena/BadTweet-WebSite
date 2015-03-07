@@ -23,24 +23,17 @@
         }
       </style>
     <![endif]-->
-    <link rel="stylesheet" href="animate.min.css" type="text/css">
+<!--     <link rel="stylesheet" href="animate.min.css" type="text/css"> -->
     <link rel="stylesheet" href="style.css" type="text/css">
     
   
   </head>
-  <body>
+  <body class="error-page">
     <!-- NAVBAR
     ================================================== -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-          aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <div class="brand">
             <a href="index.html"><img src="images/logo@2x.png" class="app-icon-micro" alt="App icon"></a>ARWAY The&nbsp;Running&nbsp;Winner
           </div>
@@ -49,17 +42,21 @@
     </nav>
 	<div class="container">
 	<br>
-      <h1>Error 404 - page not found</h1>
+      <h1>Error 404<small><br>Page Not Found</small></h1>
 
-      <p><img src="images/Arway.png" class="pull-right" alt="Иллюстрация: главный герой — Arway">
-        The page you were looking for cannot be found!</p>
-	  <p>Perhaps you are here because:</p>
-      <ol>
-	  <li>The page has moved</li>
-	  <li>The pages no longer exists</li>
-	  <li>You like 404 pages</li>
-	  </ol>
-	  <a href="index.html" class="btn btn-primary btn-lg active" role="button">Return to homepage</a>
-	</div>
+<!--       <p><img src="images/Arway.png" class="pull-right" alt="Иллюстрация: главный герой — Arway"> -->
+      <div class="page">
+        <p>The page you were looking for cannot be found!</p>
+    	  <p>Perhaps you are here because:</p>
+        <ul>
+      	  <li>The page has moved;</li>
+      	  <li>The pages no longer exists;</li>
+      	  <li>You like 404 pages.</li>
+    	  </ul>
+    	  <div class="button-container">
+      	  <a href="index.html" class="btn btn-lg btn-primary" role="button"><span class="glyphicon glyphicon-chevron-left"></span> Return to homepage</a>
+    	  </div>
+      </div>
+  	</div>
   </body>
 </html>

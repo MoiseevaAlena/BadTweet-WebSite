@@ -338,6 +338,19 @@ footer.main-footer .trademarks {
   padding-right: 10px;
 }
 /* EOF FOOTER */
+/* ERROR PAGE */
+.error-page .container {
+  text-align: center;
+}
+.error-page .page {
+  text-align: left;
+  display: inline-block;
+}
+.error-page .button-container {
+  text-align: center;
+  margin-top: 40px;
+}
+/* EOF ERROR PAGE */
 /* MEDIA MODIFIERS */
 @media (min-width: 768px) {
   body {
