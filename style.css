@@ -329,10 +329,20 @@ footer.main-footer .trademarks,
 footer.main-footer .legal {
   font-size: 12px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
 }
 footer.main-footer .trademarks {
   margin: 25px 0;
   text-align: left;
+}
+.host {
+  margin-bottom: 0 !important;
+  width: 80px;
+  height: 15px;
+  margin-right: -80px;
+}
+.host:hover {
+  border: none !important;
 }
 #scroll-up .glyphicon {
   padding-right: 10px;
