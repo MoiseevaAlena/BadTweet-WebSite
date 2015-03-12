@@ -143,13 +143,13 @@ class StrappingTemplate extends BaseTemplate {
 <?php if ( $wgGroupPermissions['*']['edit'] || $wgBootstrapSkinAnonNavbar || $this->data['loggedin'] ) { ?>
 <div id="userbar" class="bg-cyan">
   <div class="body">
-      <div class="col-md-12 hidden-xs hidden-sm">
+      <!-- <div class="col-md-12"> был класс этот --><div>
       <ul class="nex-menu nex-menu-response-to-icons nex-menu-anim-slide">
 	    <li><a href="<?php echo htmlspecialchars( $this->data['nav_urls']['mainpage']['href'] ) ?>"><i class="fa fa-home"></i> Главная</a></li>
                 <li class="right search">					
 					<form class="navbar-search" action="<?php $this->text( 'wgScript' ) ?>" id="searchform">					
 						<div class="input">
-							<button type="submit" class="button">Go</button>
+							<button type="submit" class="button"><span class="glyphicon glyphicon-search"></span></button>
 							<input id="searchInput" type="search" accesskey="f" title="<?php $this->text('searchtitle'); ?>" placeholder="<?php $this->msg('search'); ?>" name="search" value="<?php echo htmlspecialchars ($this->data['search']); ?>">
 						</div>					
 					</form>
@@ -586,7 +586,7 @@ class StrappingTemplate extends BaseTemplate {
 
         case 'PERSONALNAV':
           ?>		  
-			<a href="#"><i class="fa fa-question"></i> Я</a>
+			<a href="#"><i class="fa fa-user"></i> Я</a>
 				<div class="grid-container3">
 					<ul>
 					<?php foreach ( $this->getPersonalTools() as $key => $item ) { echo $this->makeListItem( $key, $item ); }?>

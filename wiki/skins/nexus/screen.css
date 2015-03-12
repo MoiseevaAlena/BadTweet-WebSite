@@ -122,12 +122,14 @@ a:not([name]) {
   }
 }
 
+/* 
 @media (max-width: 767px) {
   #userbar {
     margin-left: -20px;
     margin-right: -20px;
   }
 }
+ */
 
 .layout .firstHeading {
   display: none;

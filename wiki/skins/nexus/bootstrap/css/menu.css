@@ -640,6 +640,9 @@
 /* pad */
 /**/
 @media screen and (max-width: 1000px) {
+	.nex-menu {
+		width: auto;
+	}
 	.nex-menu li a {
 		padding: 0 15px;
 	}
