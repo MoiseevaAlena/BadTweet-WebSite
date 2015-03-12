@@ -512,18 +512,19 @@ input, button, select, textarea {
   }
 }
 
-section#content a.external,
-section#content a.external[href ^="gopher://"] {
-    /*Removed for aesthetic purposes, feel free to uncomment if you prefer to show the external link icon*/
-	/* @embed */
-	/*background: url(images/external-link-ltr-icon.png) center right no-repeat;*/
-	padding-right: 2px;
-}
-section#content a.external[href ^="https://"],
-.link-https {
-	/* @embed */
-	background: url(images/lock-icon.png) center right no-repeat;
-	padding-right: 13px;
+section#content a.external[href ^="https://"]:after,
+.link-https:after,
+section#content a.external:after,
+section#content a.external[href ^="gopher://"]:after {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+	content: "\f08e";
+	font-size: 85%;
 }
 section#content a.external[href ^="mailto:"],
 .link-mailto {
