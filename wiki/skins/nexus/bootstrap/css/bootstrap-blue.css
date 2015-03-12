@@ -32065,13 +32065,16 @@ object {
 
 #toc, .toc {
 font-size: 12px;
+/* 
 width:20%;
+ */
 float: right !important;
 margin:50px 0px 0px 15px;
-border: 1px solid #AAA;
+border: 1px solid #c0c0c0/* AAA */;
 background-color: #F9F9F9;
 display: table;
-padding: 7px;
+/* padding: 7px; */
+padding: 0px 10px 5px 10px;
 }
 
 .mw-content-ltr .toc ul, .mw-content-ltr #toc ul {
