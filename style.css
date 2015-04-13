@@ -251,7 +251,7 @@ a.right.carousel-control {
 /* EOF CAROUSEL */
 /* ARTICLES */
 .article {
-  border-bottom: 1px solid #ddd;
+/*   border-bottom: 1px solid #ddd; бепмсрэ напюрмн, еякх анкэье ндмнцн щкелемрю .article асдер */ 
   padding-bottom: 40px;
 }
 .article.last {
@@ -402,3 +402,8 @@ footer.main-footer .trademarks {
   }
 }
 /* EOF MEDIA MODIFIERS */
+
+p.narrow {
+	margin-left: 143px;
+	margin-right: 143px;
+}
