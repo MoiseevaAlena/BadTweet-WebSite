@@ -407,3 +407,13 @@ p.narrow {
 	margin-left: 143px;
 	margin-right: 143px;
 }
+
+.download-mac {
+	position:relative;
+}
+
+.download-mac small {
+	font-size:60%;
+	position:absolute;
+	bottom: 2px;
+}
