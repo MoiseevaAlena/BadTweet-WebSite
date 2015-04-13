@@ -44,6 +44,8 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+		<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
   </head>
   <body>
   
@@ -100,9 +102,18 @@
                 </span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">VK</a></li>
+				<li><script type="text/javascript"><!--
+document.write(VK.Share.button({
+  url: 'http://arwaytherunningwinner.com',
+  title: 'Игра Arway The Running Winner',
+  image: 'http://arwaytherunningwinner.com/apple-icon.png',
+  noparse: true
+},{type: "link_noicon", text: "VK"}));
+--></script></li>
                 <!--<li><a href="#">Facebook</a></li>-->
-                <li><a href="#">Email</a></li>
+                <!--<li><a href="#">Email</a></li>-->
+				 <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Игра Arway The Running Winner" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
               </ul>
             </li>
             
@@ -132,11 +143,13 @@
           
           <!-- DOWNLOAD MOBILE & DESKTOP 
           ================================================== -->
-<!--
+
           <div class="col-lg-4 col-md-4 hidden-sm hidden-xs hover-mid">
-            <img src="images/logo@2x.png" class="app-icon-mini">
-            <p>Игра доступна<br>на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
-            <p class="small-text">Версия для мобильных устройств:</p>
+            <img src="../images/logo@2x.png" class="app-icon-mini">
+            <!--<p>A game for <br>&nbsp;iPhone,&nbsp;Android,<br>а&nbsp;&nbsp;Apple computers.</p> -->
+			<p>A game for <br>&nbsp;&nbsp;Apple computers.</p> 
+           <!--
+		   <p class="small-text">Версия для мобильных устройств:</p>
             <div>
               <!- - Use https://linkmaker.itunes.apple.com/us/ or app settings page to replace this with the correct link - ->
               <a href="https://itunes.apple.com/us/app/keynote/id361285480?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
@@ -146,19 +159,20 @@
             </div>
             
             <p class="small-text">Версия для настольных систем:</p>
+			-->
             <div class="btn btn-primary btn-lg download-mac">
-              <img src="images/finder-icon@2x.png" class="download-mac-icon">Скачать для Mac
+              <img src="../images/finder-icon@2x.png" class="download-mac-icon">Скачать для Mac
             </div>
             
           </div>
--->
+
           <!-- EOF DOWNLOAD MOBILE & DESKTOP -->
           
           <!-- DOWNLOAD MOBILE ONLY 
           ================================================== -->
 <!--
           <div class="hidden-lg hidden-md col-sm-12 col-xs-12 links-are-below">
-            <p>Игра доступна на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
+            <p>A game for&nbsp;iPhone, &nbsp;Android,<br>а&nbsp;&nbsp;Apple computers.</p>
             <div>
               <!- - Use https://linkmaker.itunes.apple.com/us/ or app settings page to replace this with the correct link - ->
               <a href="https://itunes.apple.com/us/app/keynote/id361285480?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
@@ -173,7 +187,8 @@
           
           <!-- WILL BE AVALIABLE...
           ================================================== -->
-          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 links-are-below">
+          <!--
+		  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 links-are-below">
             <img src="../images/logo@2x.png" class="app-icon-mini hidden-sm hidden-xs" alt="App Logo">
             <p>A game for&nbsp;iPhone, Android&nbsp;devices, and&nbsp;Apple&nbsp;computers.</p>
             <p class="well-lg bg-primary">Release in April&nbsp;2015.</p>
@@ -184,6 +199,7 @@
             
             <div class="anchor" id="carousel"></div>
           </div>
+		  -->
           <!-- EOF WILL BE AVALIABLE... -->
 
         </div>

@@ -44,6 +44,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+	
+	<!-- Put this script tag to the <head> of your page -->
+<script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+
   </head>
   <body>
   
@@ -100,9 +104,20 @@
                 </span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">ВКонтакте</a></li>
+                <!--<li><a href="#">ВКонтакте</a></li>-->
+				<li><script type="text/javascript"><!--
+document.write(VK.Share.button({
+  url: 'http://arwaytherunningwinner.com',
+  title: 'Игра Arway The Running Winner',
+  image: 'http://arwaytherunningwinner.com/apple-icon.png',
+  noparse: true
+},{type: "link_noicon", text: "ВКонтакте"}));
+--></script></li>
+
                 <!--<li><a href="#">Facebook</a></li>-->
-                <li><a href="#">Email</a></li>
+                <!-- <li><a href="#">Email</a></li>-->
+				 <li><a href="https://twitter.com/share" class="twitter-share-button" data-text="Игра Arway The Running Winner" data-count="none">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>		
               </ul>
             </li>
             
@@ -132,26 +147,32 @@
           
           <!-- DOWNLOAD MOBILE & DESKTOP 
           ================================================== -->
-<!--
+
           <div class="col-lg-4 col-md-4 hidden-sm hidden-xs hover-mid">
-            <img src="images/logo@2x.png" class="app-icon-mini">
-            <p>Игра доступна<br>на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
+            <img src="../images/logo@2x.png" class="app-icon-mini">
+            <!--
+			<p>Игра доступна<br>на&nbsp;iPhone, для&nbsp;Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
             <p class="small-text">Версия для мобильных устройств:</p>
-            <div>
-              <!- - Use https://linkmaker.itunes.apple.com/us/ or app settings page to replace this with the correct link - ->
-              <a href="https://itunes.apple.com/us/app/keynote/id361285480?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
+			-->
+			<p>Игра доступна<br>&nbsp;для&nbsp;Apple компьютеров.</p>
+              <!-- Use https://linkmaker.itunes.apple.com/us/ or app settings page to replace this with the correct link -->
+			<!--
+			<div>             
+			 <a href="https://itunes.apple.com/us/app/keynote/id361285480?mt=8&uo=4" target="itunes_store" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.png) no-repeat;width:135px;height:40px;@media only screen{background-image:url(https://linkmaker.itunes.apple.com/htmlResources/assets/en_us//images/web/linkmaker/badge_appstore-lrg.svg);}"></a>
             </div>
             <div>
               <a href="https://play.google.com/store/search?q=pub:NULL" style="display:inline-block;overflow:hidden;background:url(https://developer.android.com/images/brand/en_app_rgb_wo_45.png) no-repeat;width:129px;height:45px;"></a>
             </div>
+			-->
+
             
             <p class="small-text">Версия для настольных систем:</p>
             <div class="btn btn-primary btn-lg download-mac">
-              <img src="images/finder-icon@2x.png" class="download-mac-icon">Скачать для Mac
+              <a href="http://arwaytherunningwinner.com/app/Arway-The-Running-Winner-v1.0.zip"><img src="../images/finder-icon@2x.png" class="download-mac-icon"></a>Скачать для Mac
             </div>
-            
           </div>
--->
+
+
           <!-- EOF DOWNLOAD MOBILE & DESKTOP -->
           
           <!-- DOWNLOAD MOBILE ONLY 
@@ -170,9 +191,10 @@
           </div>
 -->
           <!-- EOF DOWNLOAD MOBILE ONLY -->
-          
+         
           <!-- WILL BE AVALIABLE...
           ================================================== -->
+		  <!--
           <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 links-are-below">
             <img src="../images/logo@2x.png" class="app-icon-mini hidden-sm hidden-xs" alt="Логотип приложения">
             <p>Игра для&nbsp;iPhone, Android,<br>а&nbsp;так же для&nbsp;Apple компьютеров.</p>
@@ -184,6 +206,7 @@
             
             <div class="anchor" id="carousel"></div>
           </div>
+		  -->
           <!-- EOF WILL BE AVALIABLE... -->
 
         </div>
@@ -236,7 +259,9 @@
         Знакомьтесь, главный герой игры — Arway.</p>
       <p>Как любой современный человек, Arway тратит много времени на общение в социальных сетях.</p>
       <p>Arway познакомился со своей возлюбленной в Интернете, и живому общению они оба предпочитают виртуальное. Но именно сегодня он решает сделать ей предложение. И как же? Через Интернет. Но в самый важный момент падают сервера. Не в силах выдержать ожидание, он срывается с места и бежит к своей возлюбленной.</p>
-      <p>Действие игры начинается в офисе, из которого он сбегает. В конце уровня Arway встречает своего начальника, который очень недоволен его побегом. Следующий уровень — улицы мегаполиса, затем торговый центр, где он должен купить кольцо на собранные на предыдущем уровне монеты. В случае, если игрок не набрал достаточное количество монет, ему предстоит встреча с охранником торгового центра. Из торгового центра он продолжает свой путь к дому девушки. И вот игра близится к завершению. Arway в доме своей возлюбленной, но ему ещё предстоит её отыскать. В конце игры Arway узнает, скажет ли она ему да. Ответ будет зависеть от того, как вы пройдете игру!</p>
+      <p>Действие игры начинается в офисе, из которого он сбегает. В конце уровня Arway встречает своего начальника, который очень недоволен его побегом. Следующий уровень — улицы мегаполиса, Arway неюбходимо добраться до дома своей возлюбленной.
+	  <!--затем торговый центр, где он должен купить кольцо на собранные на предыдущем уровне монеты. В случае, если игрок не набрал достаточное количество монет, ему предстоит встреча с охранником торгового центра. Из торгового центра он продолжает свой путь к дому девушки. -->
+	   И вот Arway в доме своей возлюбленной, но ему ещё предстоит её отыскать. В конце игры Arway узнает, скажет ли она ему да. Ответ будет зависеть от того, как вы пройдете игру!</p>
       <!-- EOF ABOUT -->
   
   <!--
